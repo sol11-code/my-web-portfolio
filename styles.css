@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+}
+
+body {
+    background-color: #160F43;
+    padding: 1%;
+    color: #768CF9;
+}
+
+a {
+    color: #7AB8F5;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #C96BFD;
+    color: #2B1F6B;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+::selection {
+    background-color: #C96BFD;
+    color: #2B1F6B;
+}
+
+/*home page*/
+
+.main-container {
+    background-color: #2B1F6B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3%;
+    margin: 3%;
+    border-radius: 30px;
+    height: 200%;
+}
+
+.main-container h1 {
+    font-size: 50px;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-1 nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.container-1 img {
+    width: 50%;
+    border-radius: 30px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.social-link img {
+    width: 50px;
+}
+
+.container-1 nav a:hover {
+    color: #C96BFD;
+    transition: 0.25s;
+}
+
+/* About Me page */
+
+.top-nav {
+    background-color: #768CF9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    float: right;
+    width: 35%;
+    height: 35px;
+}
+
+.top-nav a {
+    color: #2B1F6B;
+}
+
+a:hover {
+    color: #7AB8F5;
+    transition: 0.25s;
+}
+
+/* Resume page */
+
+.resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25em;
+}
+
+.resume-first-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    size: 30px;
+}
+
+.resume-second-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.resume-section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #2B1F6B;
+    border-radius: 30px;
+    padding: 4%;
+    margin: 1%;
+}
+
+.resume-button {
+    border: none;
+    border-radius: 30px;
+    width: 25%;
+    height: 25px;
+    align-self: center;
+    background-color: #7AB8F5;
+    color: #2B1F6B;
+}
+
+/* Contact page */
+
+.contact-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    height: 20em;
+    margin: auto;
+}
+
+.contact-inputs input {
+    background-color: #2B1F6B;
+    color: #768CF9;
+    border: none;
+    text-decoration: none;
+    border-radius: 30px;
+    height: 35px;
+}
+
+.contact-inputs input::placeholder {
+    color:#768CF9;
+}
+
+.contact-inputs button {
+    border: none;
+    border-radius: 30px;
+    width: 30%;
+    height: 35px;
+    align-self: flex-end;
+    background-color: #7AB8F5;
+    color: #2B1F6B;
+}
+
+

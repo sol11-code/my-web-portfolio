@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My resume</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
+    <nav class="top-nav">
         <a href="/home.html"><img src="/img" alt="Back arrow"></a>
         <a href="/about.html">About Me</a>
         <a href="/resume.html">Resume</a>
@@ -18,54 +19,63 @@
 
     <h1>My Resume</h1>
 
-    <section class="resume-section">
-        <h2>Profile</h2>
-        <p>I am a self-motivated and aspiring web developer who started coding two years ago. Currently looking for a
-            full-time job where I can apply my creativity and practice my coding and problem-solving skills.</p>
+    <section class="resume">
+        <div class="resume-first-half">
+            <section class="resume-section">
+                <h2>Profile</h2>
+                <p>I am a self-motivated and aspiring web developer who started coding two years ago. Currently looking
+                    for
+                    a
+                    full-time job where I can apply my creativity and practice my coding and problem-solving skills.</p>
+            </section>
+
+            <section class="resume-section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Web Design</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Figma</li>
+                    <li>Visual Studio Code</li>
+                    <li>GitHub Desktop</li>
+                    <li>Typing (~65 wpm)</li>
+                    <li>Computer Skills</li>
+                    <li>Drawing</li>
+                    <li>Creativity</li>
+                    <li>Patience</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="resume-second-half">
+            <section class="resume-section">
+                <h2>Education</h2>
+                <p>Sunnyside High</p>
+                <p>2020-2024</p>
+                <ul>
+                    <li>AP Courses: Computer Science Principles, Statistics</li>
+                </ul>
+                <p>Center for Advanced Research and Technology (CART)</p>
+                <p>2023-2024</p>
+                <ul>
+                    <li>Learned how to use programs such as VSC and GitHub Desktop</li>
+                    <li>Learned languages such as HTML, CSS, and JS</li>
+                </ul>
+            </section>
+
+            <section class="resume-section">
+                <h2>Experience</h2>
+                <ul>
+                    <li>2024 CART Showcase - Presented JP Themed Website</li>
+                    <li>2024 Career Skills Challenge - Web Design</li>
+                </ul>
+            </section>
+        </div>
+
     </section>
 
-    <section class="resume-section">
-        <h2>Skills</h2>
-        <ul>
-            <li>Web Design</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Figma</li>
-            <li>Visual Studio Code</li>
-            <li>GitHub Desktop</li>
-            <li>Typing (~65 wpm)</li>
-            <li>Computer Skills</li>
-            <li>Drawing</li>
-            <li>Creativity</li>
-            <li>Patience</li>
-        </ul>
-    </section>
-
-    <section class="resume-section">
-        <h2>Education</h2>
-        <p>Sunnyside High</p>
-        <p>2020-2024</p>
-        <ul>
-            <li>AP Courses: Computer Science Principles, Statistics</li>
-        </ul>
-        <p>Center for Advanced Research and Technology (CART)</p>
-        <p>2023-2024</p>
-        <ul>
-            <li>Learned how to use programs such as VSC and GitHub Desktop</li>
-            <li>Learned languages such as HTML, CSS, and JS</li>
-        </ul>
-    </section>
-
-    <section class="resume-section">
-        <h2>Experience</h2>
-        <ul>
-            <li>2024 CART Showcase - Presented JP Themed Website</li>
-            <li>2024 Career Skills Challenge - Web Design</li>
-        </ul>
-    </section>
-
-    <button>Download my resume here!</button>
+    <button class="resume-button">Download my resume here!</button>
 
     </section class="social-links">
     <a class="social-link" href="">
