@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -17,11 +16,15 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #2B1F6B;
+    transition: 0.25s;
+}
+
 h1 {
-    background-color: #2B1F6B;
     margin: 1em;
     padding: 10px;
-    border-radius: 30px;
+    text-align: center;
 }
 
 button:hover {
@@ -36,6 +39,8 @@ button:hover {
     color: #2B1F6B;
 }
 
+/*navigation bar*/
+
 .nav-container {
     display: flex;
     justify-content: center;
@@ -43,6 +48,7 @@ button:hover {
 
 .top-nav {
     background-color: #768CF9;
+    border: 2px solid #2B1F6B;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,17 +59,42 @@ button:hover {
 }
 
 .top-nav a {
+    /* background-color: #7AB8F5; */
     color: #2B1F6B;
+    padding: 5px;
+    border-radius: 30px;
 }
 
-a:hover {
+.top-nav a:hover {
+    background-color: #2B1F6B;
     color: #7AB8F5;
     transition: 0.25s;
 }
 
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2% 0 2% 0;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-link img {
+    width: 50px;
+}
+
+.social-link p {
+    align-self: center;
+    margin-left: 10%;
+}
+
 /*home page*/
 
-.main-container {
+/* .main-container {
     background-color: #2B1F6B;
     display: flex;
     flex-direction: column;
@@ -96,30 +127,72 @@ a:hover {
     border-radius: 30px;
 }
 
-.social-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 2% 0 2% 0;
-}
-
-.social-link {
-    display: flex;
-    flex-direction: row;
-}
-
-.social-link img {
-    width: 50px;
-}
-
-.social-link p {
-    align-self: center;
-    margin-left: 10%;
-}
-
 .container-1 nav a:hover {
     color: #C96BFD;
     transition: 0.25s;
+} */
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-header h1 {
+    font-size: 3em;
+    margin: 2%;
+    text-align: left;
+}
+
+.introduction {
+    font-size: 25px;
+    margin: 2%;
+}
+
+.main-container {
+    background-color: #2B1F6B;
+    border-top: #768CF9 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3%;
+    height: 200%;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container-1 nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.container-1 nav a {
+    transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.container-1 img {
+    width: 50%;
+    border-radius: 30px;
+    box-shadow: 60px -35px #160F43;
+}
+
+.container-1 nav a:hover {
+    box-shadow: inset 175px 0 0 0 #C96BFD;
+    color: #2B1F6B;
+}
+
+.social-links.front {
+    background-color: #768CF9;
+    color: #2B1F6B;
+    border-top: #160F43 2px solid;
+    margin: 0;
+    padding: 2%;
 }
 
 /* About Me page */
@@ -143,7 +216,9 @@ a:hover {
 @keyframes slideIn {
     from {
         margin-bottom: 200%;
-    } to {
+    }
+
+    to {
         margin-bottom: 0;
     }
 }
@@ -200,6 +275,7 @@ a:hover {
     justify-content: flex-start;
     flex-direction: column;
     background-color: #2B1F6B;
+    border: 2px solid #768CF9;
     border-radius: 30px;
     padding: 4%;
     margin: 1%;
@@ -209,14 +285,24 @@ a:hover {
     flex-grow: 1;
 }
 
+.resume h2 {
+    color: #C96BFD;
+    text-align: center;
+}
+
 .resume-button {
     border: none;
     border-radius: 30px;
     width: 25%;
-    height: 25px;
+    height: 35px;
     background-color: #7AB8F5;
     color: #2B1F6B;
     margin: 1%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
 }
 
 /* Portfolio page */
@@ -234,6 +320,7 @@ a:hover {
     padding: 1.25%;
     width: 25em;
     height: 20em;
+    border: 2px solid #768CF9;
     border-radius: 30px;
 }
 
@@ -245,6 +332,10 @@ a:hover {
 
 .portfolio-item img {
     width: 25em;
+}
+
+.portfolio-item h2 {
+    color: #C96BFD;
 }
 
 /* Contact page */
@@ -272,7 +363,7 @@ a:hover {
 }
 
 .contact-inputs input::placeholder {
-    color:#768CF9;
+    color: #768CF9;
     padding: 1em;
 }
 
