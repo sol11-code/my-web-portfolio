@@ -334,10 +334,6 @@ button:hover {
     width: 25em;
 }
 
-.portfolio-item h2 {
-    color: #C96BFD;
-}
-
 /* Contact page */
 
 .thank-you {
@@ -355,7 +351,7 @@ button:hover {
 .contact-inputs input[type=text] {
     background-color: #2B1F6B;
     color: #768CF9;
-    border: none;
+    border: 2px solid #768CF9;
     text-decoration: none;
     border-radius: 30px;
     height: 3em;
@@ -388,24 +384,40 @@ input[type=submit]:hover {
 
 .projects-container {
     display: flex;
+    flex-direction: column;
     margin: 2%;
 }
 
 .project {
+    display: flex;
+    justify-content: space-between;
     background-color: #2B1F6B;
     margin: 1em;
-    padding: 1em;
+    padding: 3%;
+    border: 2px solid #768CF9;
     border-radius: 30px;
+}
+
+.project h2 {
+    font-size: 2em;
 }
 
 .project img {
     width: 15em;
+    box-shadow: 20px -10px #160F43;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5em;
 }
 
 /* Writing page */
 
 .sample {
     background-color: #2B1F6B;
+    border: 2px solid #768CF9;
     border-radius: 30px;
     margin: 2%;
     padding: 1em;
@@ -415,8 +427,9 @@ input[type=submit]:hover {
 
 .art-container {
     display: flex;
-    flex-direction: row;
+    flex-flow: column wrap;
     justify-content: space-around;
+    align-content: center;
 }
 
 .picture {
@@ -430,6 +443,7 @@ input[type=submit]:hover {
     width: 25em;
     height: 20em;
     text-align: center;
+    border: 2px solid #768CF9;
     border-radius: 30px;
 }
 
