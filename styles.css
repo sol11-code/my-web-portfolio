@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Nunito';
 }
 
@@ -400,6 +401,7 @@ input[type=submit]:hover {
 
 .project h2 {
     font-size: 2em;
+    color: #C96BFD;
 }
 
 .project img {
@@ -449,4 +451,76 @@ input[type=submit]:hover {
 
 .picture p {
     justify-self: center;
+}
+
+@media only screen and (max-width: 640px) {
+
+    p {
+        font-size: 15px;
+    }
+
+    /* Home page */
+
+    .container-1 {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 40em;
+    }
+
+    .container-1 nav, .container-1 img {
+        align-self: center;
+    }
+
+    .container-1 img {
+        width: 75%;
+        margin-right: 15%;
+    }
+
+    .social-links.front {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Resume page */
+
+    .resume {
+        flex-direction: column;
+    }
+
+    .resume-first-half, .resume-second-half {
+        align-self: center;
+        width: 100%;
+    }
+
+    .resume-section {
+        padding: 2em;
+    }
+
+    .button-container button {
+        width: 100%;
+    }
+
+    /* Portfolio page */
+
+    .portfolio-items {
+        flex-direction: column;
+    }
+
+    .portfolio-item {
+        align-self: center;
+        margin: 5px;
+        padding: 15px;
+    }
+
+    /* Contact page */
+
+    .thank-you {
+        margin: 2em;
+    }
+
+    .contact-inputs {
+        width: 90%;
+    }
+
 }
