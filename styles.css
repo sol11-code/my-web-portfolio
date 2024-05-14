@@ -320,7 +320,7 @@ button:hover {
     background-color: #2B1F6B;
     padding: 1.25%;
     width: 25em;
-    height: 20em;
+    height: 22em;
     border: 2px solid #768CF9;
     border-radius: 30px;
 }
@@ -329,10 +329,6 @@ button:hover {
     background-color: #768CF9;
     color: #2B1F6B;
     transition: 0.25s;
-}
-
-.portfolio-item img {
-    width: 25em;
 }
 
 /* Contact page */
@@ -480,6 +476,18 @@ input[type=submit]:hover {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+
+    /* About page */
+
+    .profile {
+        flex-direction: column;
+        width: 10em;
+        margin: 10px;
+    }
+
+    .profile img {
+        width: 500%;
     }
 
     /* Resume page */
