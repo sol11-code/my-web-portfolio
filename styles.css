@@ -180,11 +180,13 @@ button:hover {
 
 .main-container {
     background-color: #2B1F6B;
-    border-top: #768CF9 2px solid;
+    border: #768CF9 2px solid;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 3%;
+    margin: 2%;
     height: 200%;
 }
 
@@ -222,6 +224,14 @@ button:hover {
     border-top: #160F43 2px solid;
     margin: 0;
     padding: 2%;
+}
+
+.social-links.front a {
+    color: #2B1F6B;
+}
+
+.social-links.front a:hover {
+    color: #7AB8F5;
 }
 
 /* About Me page */
@@ -365,7 +375,7 @@ button:hover {
     flex-direction: column;
     justify-content: space-between;
     background-color: #2B1F6B;
-    padding: 1.25%;
+    padding: 25px;
     width: 25em;
     height: 22em;
     border: 2px solid #768CF9;
@@ -512,7 +522,16 @@ input[type=submit]:hover {
         font-size: 15px;
     }
 
+    /* Navigation bar */
+    .top-nav {
+        width: 200%;
+    }
+
     /* Home page */
+
+    .main-header {
+        font-size: 75%;
+    }
 
     .container-1 {
         flex-direction: column;
@@ -575,7 +594,6 @@ input[type=submit]:hover {
     .portfolio-item {
         align-self: center;
         margin: 5px;
-        padding: 15px;
     }
 
     /* Contact page */
