@@ -214,7 +214,7 @@ button:hover {
     white-space: nowrap;
     width: 0;
     animation: typing 2s linear forwards;
-    animation-timing-function: steps(100, end);
+    animation-timing-function: steps(25, end);
 }
 
 .profile div {
