@@ -25,6 +25,7 @@ a:hover {
 }
 
 h1 {
+    color: #C96BFD;
     margin: 1em;
     padding: 10px;
     text-align: center;
@@ -209,7 +210,6 @@ button:hover {
 
 .profile p {
     text-shadow: 5px 3px #2B1F6B;
-    /* animation: slideIn 2s; */
     overflow: hidden;
     white-space: nowrap;
     width: 0;
@@ -314,6 +314,7 @@ button:hover {
 }
 
 /* Portfolio page */
+
 .portfolio-items {
     display: flex;
     flex-direction: row;
@@ -338,27 +339,44 @@ button:hover {
     transition: 0.25s;
 }
 
+.portfolio-item img {
+    width: 350px;
+    max-height: 230px;
+    align-self: center;
+}
+
 /* Contact page */
 
-.thank-you {
+.contact-container {
+    display: flex;
+    justify-content: space-between;
     margin: 2%;
+    height: 400px;
 }
 
 .contact {
     display: flex;
-    justify-content: space-around;
+    width: 50%;
+    padding: 2%;
+}
+
+.contact-info {
+    width: 50%;
+    padding: 2%;
+    align-self: flex-start;
 }
 
 .contact-inputs {
+    background-color: #2B1F6B;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 50%;
     height: 20em;
-    /* margin: auto; */
 }
 
 .social-links.contact {
     flex-direction: column;
+    height: 200px;
 }
 
 .contact-inputs input[type=text] {
@@ -438,7 +456,7 @@ input[type=submit]:hover {
     padding: 1em;
 }
 
-/* Art page */
+/* Photos page */
 
 .art-container {
     display: flex;
@@ -465,6 +483,9 @@ input[type=submit]:hover {
 .picture p {
     justify-self: center;
 }
+
+/* JavaScript carousel */
+
 
 @media only screen and (max-width: 480px) {
 
